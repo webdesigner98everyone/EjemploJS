@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Ejemplo Js</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a href="#" class="navbar-brand">Ejemplo JS</a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row pt-2">
+      <p class="parrafo1">La idea de dicha actividad es que podamos diligenciar nuestro pequeño formulario de registro de actividades y una vez guardemos los datos diligenciados, podamos ver
+        la informacion por medio de un JS en la parte derecha de la pantalla.
+      </p>
+    </div>
+  </div>
+  <!-- contenido -->
+  <div class="container">
+    <div class="row pt-5">
+      <!-- 4 columnas izquierda-->
+      <div class="col-md-4">
+        <div class="title">
+          Registro de activades
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <!-- formulario -->
+            <form id="formTask">
+              <div class="form-group">
+                <input type="text" id="title" placeholder="Agrega tarea" class="form-control" required>
+              </div>
+              <div class="form-group pt-3">
+                <textarea id="description" cols="80" rows="8" class="form-control" placeholder="Agrega Descripcion" required></textarea>
+              </div>
+              <div class="form-group pt-3">
+                <button type="submit" class="btn btn-primary btn-block">
+                  Guardar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- 4 columnas derecha-->
+      <div class="col-md-8">
+        <div class="title">
+          Lista De Actividades
+        </div>
+        <div id="tasks">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group pt-3">
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <footer>
+          <p class="parrafo1">Derechos Reservados -- Luis Forero</p>
+        </footer>
+      </div>
+    </nav>
+  </div>
+  <!-- JS -->
+  <script src="app.js"></script>
+</body>
+</html>
